@@ -1,0 +1,10 @@
+# Python Bytecode and cache
+__pycache__/
+*.pyc
+
+# Virtual Environment Folders (from venv and start.bat)
+.venv/
+venv/
+
+# Log files created by tests or runs
+*.log
