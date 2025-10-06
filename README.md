@@ -29,7 +29,7 @@ LogRay is written in Python and uses a virtual environment for dependency manage
 
 The included `start.bat` file automates the entire setup process, including creating the virtual environment, installing dependencies, and launching the application.
 
-1.  **Save the files:** Ensure `logray.py`, `regFormatbu.py`, `requirements.txt`, and `start.bat` are all in the same directory.
+1.  **Save the files:** Ensure `logray.py`, `regFormat.py`, `requirements.txt`, and `start.bat` are all in the same directory.
 2.  **Run the script:** Double-click the **`start.bat`** file.
 3.  **Done!** The virtual environment (`.venv`) will be created, and all necessary packages will be installed.
 
