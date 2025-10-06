@@ -1,13 +1,3 @@
-You've got a fantastic start to your `README.md`\! You just need to correctly format the second usage example and complete the rest of the document sections.
-
-Here is the **complete, finalized text** for your `README.md` file. I've integrated your new command example, ensured correct Markdown formatting, and completed the rest of the document structure.
-
------
-
-## Complete `README.md` Text
-
-Save this entire content as the file **`README.md`** in your project's root directory.
-
 ````markdown
 # LogRay ⚡️
 
