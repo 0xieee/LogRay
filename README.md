@@ -1,4 +1,3 @@
-````markdown
 # LogRay ⚡️
 
 LogRay is a fast, flexible command-line log analyzer designed to automatically detect and flag potential brute-force attacks across various log formats (SSH, Web, FTP, WAF, etc.) by analyzing failed login attempts and reporting suspicious IP addresses.
@@ -46,7 +45,7 @@ To run the analyzer, you need to execute the Python interpreter *inside* the vir
 
 ```bash
 .\.venv\Scripts\python logray.py -f C:\logs\access.log
-````
+```
 
 ### Setting a Custom Threshold
 
