@@ -111,6 +111,3 @@ The following external packages are required and will be installed via `requirem
 -----
 
 *Project by 0xieee*
-
-```
-```
