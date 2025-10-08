@@ -1,0 +1,31 @@
+Oct 6 10:01:05 servername sshd[12345]: Failed password for invalid user ftpuser from 192.168.1.10
+Oct 6 10:01:06 servername sshd[12345]: Failed password for invalid user ftpuser from 192.168.1.10
+Oct 6 10:01:07 servername sshd[12345]: Failed password for invalid user ftpuser from 192.168.1.10
+Oct 6 10:01:08 servername sshd[12345]: Failed password for invalid user ftpuser from 192.168.1.10
+Oct 6 10:01:09 servername sshd[12345]: Failed password for invalid user ftpuser from 192.168.1.10
+Oct 6 10:01:10 servername sshd[12345]: Failed password for invalid user ftpuser from 192.168.1.10
+
+# Web Server (Apache/Nginx) Bruteforce Attempts (Checking the new 'apache_401_auth_fail' pattern)
+203.0.113.50 - - [06/Oct/2025:10:02:01 +0000] "GET /admin/login.php HTTP/1.1" 401 512 "-" "Mozilla/5.0"
+203.0.113.50 - - [06/Oct/2025:10:02:02 +0000] "POST /admin/login.php HTTP/1.1" 401 512 "-" "Mozilla/5.0"
+203.0.113.50 - - [06/Oct/2025:10:02:03 +0000] "GET /administrator/index.php HTTP/1.1" 401 512 "-" "Mozilla/5.0"
+203.0.113.50 - - [06/Oct/2025:10:02:04 +0000] "POST /joomla/login HTTP/1.1" 401 512 "-" "Mozilla/5.0"
+
+# IPv6 Attempt (Checking IPv6 support in 'IP_FLEXIBLE')
+Oct 6 10:03:01 servername sshd[12346]: Invalid user root from 2001:db8::f00d
+Oct 6 10:03:02 servername sshd[12346]: Invalid user root from 2001:db8::f00d
+Oct 6 10:03:03 servername sshd[12346]: Invalid user root from 2001:db8::f00d
+Oct 6 10:03:04 servername sshd[12346]: Invalid user root from 2001:db8::f00d
+Oct 6 10:03:05 servername sshd[12346]: Invalid user root from 2001:db8::f00d
+
+# ModSecurity/WAF Denial (Checking the new 'modsecurity_denial' pattern)
+[error] [client 172.31.255.10] ModSecurity: Access denied with code 403 (Phase 2) . [hostname "example.com"]
+[error] [client 172.31.255.10] ModSecurity: Access denied with code 403 (Phase 2) . [hostname "example.com"]
+[error] [client 172.31.255.10] ModSecurity: Access denied with code 403 (Phase 2) . [hostname "example.com"]
+[error] [client 172.31.255.10] ModSecurity: Access denied with code 403 (Phase 2) . [hostname "example.com"]
+[error] [client 172.31.255.10] ModSecurity: Access denied with code 403 (Phase 2) . [hostname "example.com"]
+
+# Single generic failure (Should NOT be flagged as it's below the threshold)
+Oct 6 10:05:01 servername ftpd[999]: AUTH FAILED for user 'test' from 10.0.0.1
+Oct 6 10:05:02 servername ftpd[999]: AUTH FAILED for user 'test' from 10.0.0.1
+Oct 6 10:05:03 servername ftpd[999]: AUTH FAILED for user 'test' from 10.0.0.1
