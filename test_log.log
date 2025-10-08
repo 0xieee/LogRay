@@ -28,4 +28,5 @@ Oct 6 10:03:05 servername sshd[12346]: Invalid user root from 2001:db8::f00d
 # Single generic failure (Should NOT be flagged as it's below the threshold)
 Oct 6 10:05:01 servername ftpd[999]: AUTH FAILED for user 'test' from 10.0.0.1
 Oct 6 10:05:02 servername ftpd[999]: AUTH FAILED for user 'test' from 10.0.0.1
+
 Oct 6 10:05:03 servername ftpd[999]: AUTH FAILED for user 'test' from 10.0.0.1
